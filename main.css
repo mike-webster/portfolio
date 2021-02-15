@@ -224,35 +224,6 @@ a:visited {
     color: var(--white);
 }
 
-@media screen and (max-width: 800px) {
-    .row.flex-cont {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    .long-menu {
-        display: none;
-    }
-    hr {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .mobile-menu {
-        display: none;
-    }
-    .flex {
-        flex-direction: row;
-    }
-    .menu {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 10vw;
-        font-weight: bold;
-    }
-}
-
 .flexmenu {
     width: 100%;
     background-color: var(--brown);
@@ -267,7 +238,6 @@ a:visited {
     padding: 0.5em;
 }
 .menu {
-    display: none;
     align-items: flex-start;
     justify-content: flex-start;
     width: 15%;
@@ -306,4 +276,33 @@ a:visited {
 }
 .show {
     display: inline-flex;
+}
+
+@media screen and (max-width: 800px) {
+    .row.flex-cont {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .long-menu {
+        display: none;
+    }
+    hr {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .mobile-menu {
+        display: none;
+    }
+    .flex {
+        flex-direction: row;
+    }
+    .menu {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 10vw;
+        font-weight: bold;
+    }
 }

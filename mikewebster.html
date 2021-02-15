@@ -12,146 +12,140 @@
 
 
         <link rel="stylesheet" href="main.css">
-
+        <link rel="stylesheet" href="nav.css">
         <script type='text/javascript' src='main.js'></script>
+        <script type='text/javascript' src='nav.js'></script>
     </head>
-    <body class="col flex-cont">
-        <div class="row center-v flex-cont header white">
-            <nav class="flexmenu col flex1">
-                <div class="flex">
-                    <div class="menu">
-                        <span>
-                            <a href="#home" >Mike Webster</a>
-                            <a href="https://www.linkedin.com/in/michael-webster-65021b12" class="fa fa-linkedin white spc-left"></a>
-                            <a href="https://www.github.com/mike-webster" class="fa fa-github white spc-left"></a>
-                        </span>
+    <body class="">
+    <nav class="flexmenu">
+  <div class="flex">
+    <div class="menu">Flexbox menu</div>
+    <div class="menu">
+      <a href="#">Home</a>
+    </div>
+    <div class="menu">
+      <a href="#">Blog</a>
+    </div>
+    <div class="menu">
+      <a href="#">Contact</a>
+    </div>
+    <div class="mobile-menu">
+      <span class="menu-icon open">&#x2261;</span>
+      <span class="menu-icon close">&#x2715;</span>
+    </div>
+  </div>
+</nav>
+        <div class="col flex-cont">
+            <div class="section col flex1 text-center">
+                <div class="me img-cont" title="Say 'hi' to Max!">
+                    <div class="me"></div>
+                </div>
+                <div class="text-center">
+                    <h1>Mike Webster</h1>
+                    <hr />
+                    <h3>Senior Software Engineer in Chicago, Il</h3>
+                    <h5>Wyzant.com</h5>
+                </div>
+            </div>
+            <div class="section row flex-cont flex-wrap">
+                <div class="flex-cont col text-center flex1">
+                    <h4 id="about" class="text-center">About Me</h4>
+                    <hr />
+                </div>
+                <div class="flex-cont flex1 flex-wrap">
+                    <div class="flex1 item">
+                        <p>
+                            Through 9 years of building software to solve a variety of problems, I have evolved into a full-stack engineer with a focus
+                            on backend services who also enjoys working in DevOps.
+                        </p>
+                        <p>
+                            As time has passed I have developed a healthy addiction to learning and frequently seek out new 
+                            challenges in an attempt to add to my toolbox.
+                        </p>
+                        <p>
+                            I love helping others learn and I have over 10 years of tutoring experience doing so.
+                        </p>
+                        <p>
+                            Team process is something I have found to be crucial to the success of a team and I frequently find myself reflecting
+                            on how my team is currently operating and suggesting improvements when necessary.
+                        </p>
                     </div>
-                    <div class="menu">
-                        <a href="#about">About Me</a>
-                    </div>
-                    <div class="menu">
-                        <a href="#interests">Interests</a>
-                    </div>
-                    <div class="menu">
-                        <a href="#contact">Contact</a>
-                    </div>
-                    <div class="mobile-menu">
-                        <span class="fa fa-bars open"></span>
-                        <span class="fa fa-bars close"></span>
+                    <div class="flex1 item flex-cont col">
+                        <div>Experiences</div>
+                        <ul>
+                            <li>Using Kubernetes, Docker, and GCP, helped with operations and support of engineering team.</li>
+                            <li>Planned team's sprints, including prioritizing weekly work, handling with blockers, and running SCRUM meetings.</li>
+                            <li>Migrated our tutor jobs board from .NET MVC to a Ruby on Rails client that leveraged an existing API.</li>
+                            <li>Translated and improved an existing .NET payment processing service into Golang.</li>
+                            <li>Designed and implemented a Golang Elasticsearch service enabling users to search for questions.</li>
+                            <li>Provide code reviews and share my knowledge with our teammates.</li>
+                            <li>Create SumoLogic alerts and dashboards to be used for monitoring.</li>
+                            <li>Organize Engineering department Hack Day and Happy Hour events.</li>
+                        </ul>
                     </div>
                 </div>
-              </nav>
-        </div>
-        <div class="section col flex1 text-center">
-            <div class="me img-cont" title="Say 'hi' to Max!">
-                <!-- <img class="me" src="https://media-exp1.licdn.com/dms/image/C5603AQG1_yzTu5Guxw/profile-displayphoto-shrink_400_400/0/1517783095622?e=1618444800&v=beta&t=5hcVCfaT9YVwtTDnJz0KedA8xLYp9tCmka6Ja8XnE_M"></img> -->
-                <div class="me"></div>
             </div>
-            <div class="text-center">
-                <h1>Mike Webster</h1>
+            <div class="section row flex-cont flex-wrap">
+                <div class="flex-cont col text-center flex1">
+                    <h4 id="interests" class="text-center">Interests</h4>
+                    <hr />
+                </div>
+                <div class="flex-cont flex1 flex-wrap">
+                    <div class="flex1 item flex-cont col">
+                        <p>
+                            Some of my personal interests:
+                        </p>
+                        <p>
+                            <b>Sports:</b> I enjoy watching a variety of sports, including: NBA, NFL, EPL, and MLB. Frequently, I will attempt to
+                            combine my interests and I have recently been working on an app to suggest sports bets based on aggregated information.
+                        </p>
+                        <p>
+                            <b>Music:</b> Listening to and playing music are some of my favorite ways to pass time. Another one of my active side 
+                            projects relies on the Spotify API and enables the user to explore what they listen to and attempt to find new music.
+                        </p>
+                        <p>
+                            <b>Outdoors:</b> Snowboarding, skateboarding, hiking, and camping are some of my favorite outdoor activites. It 
+                            doesn't take much to get me outside.
+                        </p>
+                        <p>
+                            <b>Houseplants:</b> This started by me purchasing one succulent and has now snowballed into me supporting over 20 plants.
+                            My favorites are a 3 year old fiddle-leaf fig and my army of jades.
+                        </p>
+                    </div>
+                    <div class="flex1 item flex-cont col">
+                        <p>Recent Side Projects:</p>
+                        <ul>
+                            <li>
+                                <b>(Untitled Spotify Project):</b> Spotify provides some interesting functionality via REST API.  I have been
+                                building a website to expose the features a bit and to allow users a way to find new music and learn more about
+                                what they have been consuming.
+                            </li>
+                            <li>
+                                <b>WallStreetBets Tracker:</b> I am writing a script that I have scheduled to monitor what is being posted on the 
+                                Reddit forum WallStreetBets. The point is to keep track of what stocks are being talked about and how often and
+                                alert when something might be gaining in popularity.
+                            </li>
+                            <li>
+                                <b>(abandoned) Pet Tracker:</b> Last fall I was lucky enough to be able to add a Beagle puppy to my home. I also had a close
+                                friend of mine reach out to me with some interest in learning more about web development so I started this project
+                                as a way to help him learn while also being able to track certain events related to my new puppy (potty breaks,
+                                eat times, treat times, accidents, etc).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section row flex-cont flex-wrap col">
+                <h4 id="contact" class="text-center">Contact</h4>
                 <hr />
-                <h3>Senior Software Engineer in Chicago, Il</h3>
-                <h5>Wyzant.com</h5>
+                <div id="validationContainer" class="errs"></div>
+                <input class="input" type="text" placeholder="Title" id="title" />
+                <textarea class="input" placeholder="Your Message" id="message" ></textarea>
+                <button id="submit">Send</button>
             </div>
-        </div>
-        <div class="section row flex-cont flex-wrap">
-            <div class="flex-cont col text-center flex1">
-                <h4 id="about" class="text-center">About Me</h4>
-                <hr />
+            <div class="row text-center">
+                Copyright © Mike Webster 2021
             </div>
-            <div class="flex-cont flex1 flex-wrap">
-                <div class="flex1 item">
-                    <p>
-                        Through 9 years of building software to solve a variety of problems, I have evolved into a full-stack engineer with a focus
-                        on backend services who also enjoys working in DevOps.
-                    </p>
-                     <p>
-                        As time has passed I have developed a healthy addiction to learning and frequently seek out new 
-                        challenges in an attempt to add to my toolbox.
-                     </p>
-                     <p>
-                        I love helping others learn and I have over 10 years of tutoring experience doing so.
-                     </p>
-                     <p>
-                        Team process is something I have found to be crucial to the success of a team and I frequently find myself reflecting
-                        on how my team is currently operating and suggesting improvements when necessary.
-                     </p>
-                </div>
-                <div class="flex1 item flex-cont col">
-                    <div>Experiences</div>
-                    <ul>
-                        <li>Using Kubernetes, Docker, and GCP, helped with operations and support of engineering team.</li>
-                        <li>Planned team's sprints, including prioritizing weekly work, handling with blockers, and running SCRUM meetings.</li>
-                        <li>Migrated our tutor jobs board from .NET MVC to a Ruby on Rails client that leveraged an existing API.</li>
-                        <li>Translated and improved an existing .NET payment processing service into Golang.</li>
-                        <li>Designed and implemented a Golang Elasticsearch service enabling users to search for questions.</li>
-                        <li>Provide code reviews and share my knowledge with our teammates.</li>
-                        <li>Create SumoLogic alerts and dashboards to be used for monitoring.</li>
-                        <li>Organize Engineering department Hack Day and Happy Hour events.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section row flex-cont flex-wrap">
-            <div class="flex-cont col text-center flex1">
-                <h4 id="interests" class="text-center">Interests</h4>
-                <hr />
-            </div>
-            <div class="flex-cont flex1 flex-wrap">
-                <div class="flex1 item flex-cont col">
-                    <p>
-                        Some of my personal interests:
-                    </p>
-                    <p>
-                        <b>Sports:</b> I enjoy watching a variety of sports, including: NBA, NFL, EPL, and MLB. Frequently, I will attempt to
-                        combine my interests and I have recently been working on an app to suggest sports bets based on aggregated information.
-                    </p>
-                    <p>
-                        <b>Music:</b> Listening to and playing music are some of my favorite ways to pass time. Another one of my active side 
-                        projects relies on the Spotify API and enables the user to explore what they listen to and attempt to find new music.
-                    </p>
-                    <p>
-                        <b>Outdoors:</b> Snowboarding, skateboarding, hiking, and camping are some of my favorite outdoor activites. It 
-                        doesn't take much to get me outside.
-                    </p>
-                    <p>
-                        <b>Houseplants:</b> This started by me purchasing one succulent and has now snowballed into me supporting over 20 plants.
-                        My favorites are a 3 year old fiddle-leaf fig and my army of jades.
-                    </p>
-                </div>
-                <div class="flex1 item flex-cont col">
-                    <p>Recent Side Projects:</p>
-                    <ul>
-                        <li>
-                            <b>(Untitled Spotify Project):</b> Spotify provides some interesting functionality via REST API.  I have been
-                            building a website to expose the features a bit and to allow users a way to find new music and learn more about
-                            what they have been consuming.
-                        </li>
-                        <li>
-                            <b>WallStreetBets Tracker:</b> I am writing a script that I have scheduled to monitor what is being posted on the 
-                            Reddit forum WallStreetBets. The point is to keep track of what stocks are being talked about and how often and
-                            alert when something might be gaining in popularity.
-                        </li>
-                        <li>
-                            <b>(abandoned) Pet Tracker:</b> Last fall I was lucky enough to be able to add a Beagle puppy to my home. I also had a close
-                            friend of mine reach out to me with some interest in learning more about web development so I started this project
-                            as a way to help him learn while also being able to track certain events related to my new puppy (potty breaks,
-                            eat times, treat times, accidents, etc).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section row flex-cont flex-wrap col">
-            <h4 id="contact" class="text-center">Contact</h4>
-            <hr />
-            <div id="validationContainer" class="errs"></div>
-            <input class="input" type="text" placeholder="Title" id="title" />
-            <textarea class="input" placeholder="Your Message" id="message" ></textarea>
-            <button id="submit">Send</button>
-        </div>
-        <div class="row text-center">
-            Copyright © Mike Webster 2021
         </div>
     </body>
 </html>
