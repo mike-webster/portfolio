@@ -6,6 +6,12 @@
     --black: #252b31;
 }
 
+html, body {
+    margin:0;
+    height:100%;
+    min-height:100%;
+  }
+
 html {
     font-family: Montserrat;
 }
@@ -13,6 +19,8 @@ html {
 body {
     background-color: var(--white);
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 hr {
