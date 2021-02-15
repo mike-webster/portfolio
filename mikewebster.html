@@ -1,22 +1,6 @@
 <html>
     <head>
-        <!-- TODO: -->
-        <!-- 1. Hamburger menu -->
-        <!-- 2. Decide if need fix icons in title -->
-        <!-- 3. Fix hr styling -->
-        <!-- 4. Fix button styling -->
-        <!-- 5. Sticky header -->
-        <!-- 6. Increase header and section header font size -->
-        <!-- 7. Update Aboute me: -->
-        <!-- -- I think I want to break out "experiences" and my bio -->
-        <!-- -- The bio should be shorter, no one wants to read all that -->
-        <!-- -- There needs to be more specifics in the experiences section (get numbers) -->
-        <!-- 8. Update resume and upload -->
-        <!-- 9. Include link for more information on projects -->
-        <!-- 10. Set up hashnode -->
-        <!-- 11. Publish first hashnode blog -->
-        <!-- 12. Add link to blog -->
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -26,255 +10,37 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- end icons -->
 
-        <style>
-            :root {
-                --white: #f6fafb;
-                --brown: #d49c6b;
-                --light-gray: #c1c8c7;
-                --dark-gray: #5e6668;
-                --black: #252b31;
-            }
 
-            html {
-                font-family: Montserrat;
-            }
+        <link rel="stylesheet" href="main.css">
 
-            body {
-                background-color: var(--white);
-                margin: 0 auto;
-            }
-
-            hr {
-                width: 400px;
-            }
-
-            @media screen and (max-width: 600px) {
-                hr {
-                    width: 100%;
-                }
-            }
-
-            button {
-                background-color: var(--light-gray);
-                border: none;
-                padding: 10px;
-                font-weight: bolder;
-                border-radius: 25px;
-            }
-
-            h4 {
-                margin: auto;
-                text-align: center;
-            }
-
-            a:visited {
-                color: var(--white);
-            }
-
-            .row {
-                flex-direction: row;
-                padding-left: 10%;
-                padding-right: 10%;
-            }
-            @media screen and (max-width: 600px) {
-                .row.flex-cont {
-                    padding-left: 0%;
-                    padding-right: 0%;
-                }
-            }
-
-            .row:last-of-type {
-                padding: 20px;
-            }
-
-            .col {
-                flex-direction: column;
-            }
-
-            .item {
-                flex-basis: 0;
-                padding: 20px;
-            }
-
-            .flex-cont { 
-                display: flex;
-            }
-
-            .flex-wrap {
-                flex-wrap: wrap;
-            }
-
-            .flex1 {
-                flex-grow: 1;
-            }
-
-            .flex2 {
-                flex-grow: 2;
-            }
-
-            .break {
-                flex-basis: 100%;
-                height: 0;
-            }
-
-            .center {
-                justify-content: center;
-            }
-
-            .center-v {
-                align-items: center;
-            }
-
-            .left {
-                justify-content: left;
-            }
-
-            .right {
-                justify-content: right;
-            }
-
-            .text-center{
-                text-align:center;
-            }
-
-            .text-right {
-                text-align: right;
-            }
-
-            .header {
-                background-color: var(--brown);
-                color: var(--light-gray)
-            }
-
-            .header ul {
-                list-style-type: none;
-            }
-
-            .header li {
-                display: inline-block;
-                padding: 0 10px;
-            }
-
-            .header li:last-child {
-                padding-right: 0;
-            }
-
-            .header li:first-child {
-                padding-left: 0
-            }
-
-            .header a {
-                text-decoration: none;
-            }
-
-            .white {
-                color: var(--white);
-            }
-
-            .spc-left {
-                margin-left: 10px;
-            }
-
-            .me {
-                display: inline-block;
-                margin: 0 auto;
-                height: 200px;
-                width: 200px;
-                background-position: 50% 50% !important;
-                background-size: cover !important;
-                border-radius: 50%;
-                background: url('https://media-exp1.licdn.com/dms/image/C5603AQG1_yzTu5Guxw/profile-displayphoto-shrink_400_400/0/1517783095622?e=1618444800&v=beta&t=5hcVCfaT9YVwtTDnJz0KedA8xLYp9tCmka6Ja8XnE_M')
-            }
-                
-            .me:hover {
-                background: url('https://camo.githubusercontent.com/cb908b9466c7d018fd8b99fd53f2c80a8cf552abc2152b0f219336e6c824cc5f/687474703a2f2f7777772e6d696b65776562737465722e746563682f6d61785f73706c6f6f74696e672e706e67');
-            }
-
-            .img-cont {
-                border-style: solid;
-                border-color: var(--brown);
-                border-width: 5px;
-                margin-top: 10px;
-            }
-
-            .input {
-                padding: 10px;
-                margin: 10px 0;
-            }
-
-            .hide {
-                display: none;
-            }
-
-            .error {
-                margin:auto;
-                color: var(--brown);
-            }
-
-            .section {
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            .section:nth-child(odd) {
-                background-color: var(--brown);
-                color: var(--black);
-            }
-
-            .errs {
-                background-color: var(--white);
-            }
-        </style>
-
-        <script>
-            window.onload = function(){
-                btn = document.getElementById("submit");
-                btn.addEventListener("click", function(){
-                    clearValidation();
-
-                    var title = document.getElementById("title").value;
-                    var msg = document.getElementById("message").value;
-
-                    var errors = [];
-
-                    if (title.trim().length < 1) {
-                        errors.push("Please include a title!");
-                    }
-
-                    if (msg.trim().length < 1) {
-                        errors.push("Please include a message!");
-                    }
-
-                    if (errors.length > 0) {
-                        var container = document.getElementById("validationContainer");
-                        for (var i = 0; i < errors.length; i++) {
-                            container.innerHTML += "<div class='error text-center'>" + errors[i] + "</div>";
-                        }
-                        container.classList.remove("hide");
-                        return
-                    }
-                    window.open('mailto:email@mikewebster.tech?subject=' + title + '&body=' + msg);
-                });
-            };
-
-            function clearValidation() {
-                var container = document.getElementById("validationContainer");
-                container.innerHTML = "";
-                container.classList.add("hide");
-            }
-        </script>
+        <script type='text/javascript' src='main.js'></script>
     </head>
     <body class="col flex-cont">
         <div class="row center-v flex-cont header white">
-            <span class="col flex1">Mike Webster 
-                <a href="https://www.linkedin.com/in/michael-webster-65021b12" class="fa fa-linkedin white spc-left"></a>
-                <a href="https://www.github.com/mike-webster" class="fa fa-github white spc-left"></a>
-            </span>
-            <ul class="col flex1 text-right">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav class="flexmenu col flex1">
+                <div class="flex">
+                    <div class="menu">
+                        <span>
+                            <a href="#home" >Mike Webster</a>
+                            <a href="https://www.linkedin.com/in/michael-webster-65021b12" class="fa fa-linkedin white spc-left"></a>
+                            <a href="https://www.github.com/mike-webster" class="fa fa-github white spc-left"></a>
+                        </span>
+                    </div>
+                    <div class="menu">
+                        <a href="#about">About Me</a>
+                    </div>
+                    <div class="menu">
+                        <a href="#interests">Interests</a>
+                    </div>
+                    <div class="menu">
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="mobile-menu">
+                        <span class="fa fa-bars open"></span>
+                        <span class="fa fa-bars close"></span>
+                    </div>
+                </div>
+              </nav>
         </div>
         <div class="section col flex1 text-center">
             <div class="me img-cont" title="Say 'hi' to Max!">
