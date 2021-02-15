@@ -187,122 +187,12 @@ a:visited {
     background-color: var(--white);
 }
 
-.ham {
-    display: block; 
-    border-color: var(--white); 
-    border-width: 1px; 
-    border-radius: 2px; 
-    border-style: solid; 
-    background-color: transparent;
-}
-
-.ham > span{
-    margin-bottom: 4px; 
-    display: block; 
-    background-color: var(--white); 
-    height: 2px; 
-    width: 20px;
-}
-
-.ham > span:last-child {
-    margin-bottom: 0px;
-}
-
-.ham-ext {
-    width: 100%;
-    padding: 0;
-}
-
-.ham-ext.collapsed {
-    display: none;
-}
-
-.ham-ext > div {
-    width: 100%;
-    background-color: var(--brown);
-    padding: 10px;
-    color: var(--white);
-}
-
-.flexmenu {
-    width: 100%;
-    background-color: var(--brown);
-    color: var(--white);
-}
-
-.flex {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0.5em;
-}
-.menu {
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 15%;
-    font-weight: bold;
-}
-.menu:first-child {
-    display: inline-flex;
-    justify-content: left;
-    width: 80%;
-    margin-left: 0;
-    margin-right: auto;
-}
-.menu a {
-    color: var(--wihte);
-    text-decoration: none;
-    padding:0 0.5em;
-}
-.menu:nth-child(n+2):hover {
-    background-color: var(--light-gray);
-    color: var(--black);
-    border-radius: 0.5em;
-}
-.mobile-menu {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-    width: 1.2em;
-}
-.menu-icon {
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
-}
-.hide {
-    display: none;
-}
-.show {
-    display: inline-flex;
-}
-
 @media screen and (max-width: 800px) {
     .row.flex-cont {
         padding-left: 2%;
         padding-right: 2%;
     }
-    .long-menu {
-        display: none;
-    }
     hr {
         width: 100%;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .mobile-menu {
-        display: none;
-    }
-    .flex {
-        flex-direction: row;
-    }
-    .menu {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 10vw;
-        font-weight: bold;
     }
 }
