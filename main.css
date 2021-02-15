@@ -28,10 +28,20 @@ hr:first-child {
 
 button {
     background-color: var(--light-gray);
-    border: none;
     padding: 10px;
     font-weight: bolder;
     border-radius: 25px;
+    width: 400px;
+    margin: auto;
+    border-color: var(--white);
+    border-width: 1px;
+    border-style: solid;
+}
+
+button:hover {
+    border-color: var(--light-gray);
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 h4 {
@@ -199,6 +209,12 @@ a:visited {
         padding-right: 2%;
     }
     hr {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    button {
         width: 100%;
     }
 }
