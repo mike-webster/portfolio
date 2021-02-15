@@ -40,7 +40,7 @@
     padding:0 0.5em;
 }
 .menu:nth-child(n+2):hover {
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
     color: var(--black);
     border-radius: 0.5em;
 }

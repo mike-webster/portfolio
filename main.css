@@ -17,8 +17,14 @@ body {
 
 hr {
     width: 400px;
+    background-color: var(--light-gray);
+    height: 2px;
+    border: none;
 }
 
+hr:first-child {
+    height: 5px;
+}
 
 button {
     background-color: var(--light-gray);
