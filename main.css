@@ -172,11 +172,15 @@ a:visited {
 .me {
     display: inline-block;
     margin: 0 auto;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     background-position: 50% 50% !important;
     background-size: cover !important;
     background: url('img/me1.png')
+}
+
+.mob-break {
+    min-width: 305px;
 }
 
 .input {
