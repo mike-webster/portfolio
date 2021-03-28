@@ -69,13 +69,16 @@
     display: inline-flex;
 }
 
+a {
+    color: var(--white);
+}
 .menu:not(:first-child) {
     padding-left: 15px;
     min-width: 100px;
 }
 
 .menu:first-child, .mobile-menu {
-    font-size: 30px;
+    font-size: 16px;
 }
 
 @media screen and (min-width: 800px) {

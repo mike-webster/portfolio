@@ -16,7 +16,9 @@
         <script type='text/javascript' src='main.js'></script>
         <script type='text/javascript' src='nav.js'></script>
     </head>
+
     <body>
+        <!-- navigation -->
         <nav id="home" class="flexmenu">
             <div class="flex">
                 <div class="menu">
@@ -29,6 +31,10 @@
 
                 <div class="menu">
                     <a href="#bio">Bio</a>
+                </div>
+
+                <div class="menu">
+                    <a href="#tools">Tools</a>
                 </div>
 
                 <div class="menu">
@@ -45,7 +51,10 @@
                 </div>
             </div>
         </nav>
+
         <div class="col flex-cont" style="overflow-y: auto;">
+
+            <!-- Intro -->
             <div class="section col flex1 text-center no-pad-top">
                 <div class="me row">
                 </div>
@@ -58,6 +67,7 @@
                 </div>
             </div>
 
+            <!-- bio -->
             <div class="section row flex-cont flex-wrap">
                 <div class="flex-cont col text-center flex1">
                     <h4 id="bio" class="text-center">Bio</h4>
@@ -67,16 +77,16 @@
                 <div class="flex-cont flex1 flex-wrap">
                     <div class="flex1 item">
                         <p>
-                            Hi, I'm Mike! I love creating things and solving problems. 
+                            Hi, I'm Mike! I love creating solutions, learning, and sharing my knowledge. 
                         </p>
                         <p>
-                            Between my work experience and side projects I have evolved into a full stack engineer who also enjoys devops.
+                            Between my work experience and side projects I have grown into a full stack engineer with an interest in DevOps.
                         </p>
                         <p>
-                            Feel free to scroll down for more information on some of my favorite side projects.
+                            Feel free to scroll down for more information about my work experience and side projects.
                         </p>
                         <p>
-                            Want to get in touch? Reach out <a href="#contact">here</a>.
+                            Want to get in touch or request a resume? Reach out <a href="#contact">here</a>.
                         </p>
                     </div>
 
@@ -88,16 +98,37 @@
                             <b>Sports:</b> I enjoy watching a variety of sports, including: NBA, NFL, EPL, and MLB.
                         </p>
                         <p>
-                            <b>Music:</b> Listening to and playing music are some of my favorite ways to pass time. One of my active side 
-                            projects relies on the Spotify API and enables the user to explore what they listen to and attempt to find new music.
+                            <b>Music:</b> Listening to and playing music are some of my favorite ways to pass time. I have also officially lost track of the size of my vinyl collection.
                         </p>
                         <p>
                             <b>Outdoors:</b> You'll find me snowboarding, skateboarding, hiking, and camping whenever possible.
+                        </p>
+                        <p>
+                            <b>Currently Reading:</b> <a href="https://www.amazon.com/dp/1591846447">Start With Why</a>: How Great Leaders Inspire Everyone To Take Action
                         </p>
                     </div>
                 </div>
             </div>
 
+            <!-- tools -->
+            <div class="section row flex-cont flex-wrap">
+                <div class="flex-cont col text-center flex1">
+                    <h4 id="tools" class="text-center">Tools</h4>
+                    <hr />
+                    <ul class="flex-cont row flex1 spaced" style="margin: auto; list-style: none; flex-wrap: wrap;">
+                        <li>Golang</li>
+                        <li>Ruby on Rails</li>
+                        <li>MySQL</li>
+                        <li>Elasticsearch</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Google Cloud</li>
+                        <li>Heroku</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- experiences -->
             <div class="section row flex-cont flex-wrap">
                 <div class="flex-cont col text-center flex1">
                     <h4 id="experiences" class="text-center">Experiences</h4>
@@ -109,7 +140,7 @@
                         <div>Wyzant</div>
 
                         <ul class="spaced">
-                            <li>Put together a proof of concept to show we could containerize some of our legacy .NET applications and run them in our Google Cloud environments.</li>
+                            <li>Put together a successful proof of concept to show we could containerize some of our legacy .NET applications and run them in our Google Cloud environments.</li>
                             <li>Designed and lead a team project to migrate a highly trafficked (~100k+ daily requests) feature from .NET MVC to a Ruby on Rails client that leveraged an existing API to improve overall user experience.</li>
                             <li>Designed and lead a team project to introduce a new way for our users to seek out sessions with tutors.</li>
                             <li>Rewrote a legacy payroll application in Golang to improve reliability and help further automate the process.</li>
@@ -125,12 +156,12 @@
                         
                         <ul class="spaced">
                             <li>
-                                <b>Spotify Views:</b> Spotify provides some interesting functionality via REST API.  I have been
+                                <b><a href="https://www.spotify-views.com">Spotify Views</a>:</b> Spotify provides some interesting functionality via REST API.  I have been
                                 building a website to expose the features a bit and to allow users a way to find new music and learn more about
                                 what they have been consuming.
                             </li>
                             <li>
-                                <b>faithhopeandlove.io</b> Implemented and deployed website proof of concept for a charity. I used this as an excuse to experiment
+                                <b><a href="http://faithhopeandlove.io/">faithhopeandlove.io</a>:</b> Implemented and deployed website proof of concept for a charity. I used this as an excuse to experiment
                                 a little more with Golang templates on the front end and to get more familiar with setting up a server and getting through
                                 the initial deployment.
                             </li>
@@ -153,22 +184,7 @@
                 </div>
             </div>
 
-            <div class="section col flex-cont flex-wrap">
-                <div class="flex-cont col text-center flex1">
-                    <h4 id="tools" class="text-center">Tools</h4>
-                    <hr />
-                    <ul class="flex-cont row flex1 spaced" style="margin: auto; list-style: none; flex-wrap: wrap;">
-                        <li>Golang</li>
-                        <li>Ruby on Rails</li>
-                        <li>MySQL</li>
-                        <li>Elasticsearch</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Google Cloud</li>
-                        <li>Heroku</li>
-                    </ul>
-                </div>
-            </div>
+            <!-- contact -->
             <div class="section row flex-cont flex-wrap col">
                 <h4 id="contact" class="text-center">Contact</h4>
                 <hr />
@@ -177,6 +193,8 @@
                 <textarea class="input" placeholder="Your Message" id="message" ></textarea>
                 <button id="submit">Send</button>
             </div>
+
+            <!-- footer -->
             <div class="footer row text-center">
                 Copyright © Mike Webster 2021
             </div>
