@@ -13,8 +13,8 @@ html, body {
     margin:0;
     height:100%;
     min-height:100%;
-    min-width: 500px;
-  }
+    min-width: 300px;
+}
 
 html {
     font-family: 'Source Sans Pro';
@@ -25,6 +25,10 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+p {
+    min-width: 300px;
 }
 
 hr {
