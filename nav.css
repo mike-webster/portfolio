@@ -1,14 +1,17 @@
 :root {
     --white: #f6fafb;
-    --brown: #d49c6b;
-    --light-gray: #c1c8c7;
-    --dark-gray: #5e6668;
-    --black: #252b31;
+    --black: #000;
+
+    --dark-brown: #471001;
+    --medium-brown: #8a491f;
+    --light-brown: #d79e50;
+    --light-blue: #b7bcc0;
+    --dark-blue: #627e9a;
 }
 
 .flexmenu {
     width: 100%;
-    background-color: var(--brown);
+    background-color: var(--dark-blue);
     color: var(--white);
     line-height: 1.4em;
     border-color: var(--white);
@@ -45,7 +48,7 @@
     padding:0 0.5em;
 }
 .menu:nth-child(n+2):hover {
-    background-color: var(--dark-gray);
+    background-color: var(--dark-blue);
     color: var(--black);
     border-radius: 0.5em;
 }

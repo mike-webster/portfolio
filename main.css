@@ -1,19 +1,23 @@
 :root {
     --white: #f6fafb;
-    --brown: #d49c6b;
-    --light-gray: #c1c8c7;
-    --dark-gray: #5e6668;
-    --black: #252b31;
+    --black: #000;
+
+    --dark-brown: #471001;
+    --medium-brown: #8a491f;
+    --light-brown: #d79e50;
+    --light-blue: #b7bcc0;
+    --dark-blue: #627e9a;
 }
 
 html, body {
     margin:0;
     height:100%;
     min-height:100%;
+    min-width: 500px;
   }
 
 html {
-    font-family: Montserrat;
+    font-family: 'Source Sans Pro';
 }
 
 body {
@@ -25,7 +29,7 @@ body {
 
 hr {
     width: 400px;
-    background-color: var(--light-gray);
+    background-color: var(--dark-blue);
     height: 2px;
     border: none;
 }
@@ -35,7 +39,7 @@ hr:first-child {
 }
 
 button {
-    background-color: var(--light-gray);
+    background-color: var(--light-blue);
     padding: 10px;
     font-weight: bolder;
     border-radius: 25px;
@@ -47,9 +51,10 @@ button {
 }
 
 button:hover {
-    border-color: var(--light-gray);
+    border-color: var(--light-blue);
     background-color: var(--white);
     cursor: pointer;
+    color: var(--dark-blue);
 }
 
 h1 {
@@ -60,6 +65,10 @@ h4 {
     margin: auto;
     text-align: center;
     font-size: 30px;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:visited {
@@ -76,13 +85,31 @@ a:visited {
     padding: 20px;
 }
 
+.row > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.spaced > li {
+    padding-top: 10px;
+}
+
 .col {
     flex-direction: column;
+}
+
+.no-pad-top {
+    padding-top: 0px !important;
 }
 
 .item {
     flex-basis: 0;
     padding: 20px;
+}
+
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
 }
 
 .flex-cont { 
@@ -130,34 +157,6 @@ a:visited {
     text-align: right;
 }
 
-.header {
-    background-color: var(--brown);
-    color: var(--light-gray);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.header ul {
-    list-style-type: none;
-}
-
-.header li {
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.header li:last-child {
-    padding-right: 0;
-}
-
-.header li:first-child {
-    padding-left: 0
-}
-
-.header a {
-    text-decoration: none;
-}
-
 .white {
     color: var(--white);
 }
@@ -169,23 +168,11 @@ a:visited {
 .me {
     display: inline-block;
     margin: 0 auto;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     background-position: 50% 50% !important;
     background-size: cover !important;
-    border-radius: 50%;
-    background: url('https://media-exp1.licdn.com/dms/image/C5603AQG1_yzTu5Guxw/profile-displayphoto-shrink_400_400/0/1517783095622?e=1618444800&v=beta&t=5hcVCfaT9YVwtTDnJz0KedA8xLYp9tCmka6Ja8XnE_M')
-}
-    
-.me:hover {
-    background: url('https://camo.githubusercontent.com/cb908b9466c7d018fd8b99fd53f2c80a8cf552abc2152b0f219336e6c824cc5f/687474703a2f2f7777772e6d696b65776562737465722e746563682f6d61785f73706c6f6f74696e672e706e67');
-}
-
-.img-cont {
-    border-style: solid;
-    border-color: var(--brown);
-    border-width: 5px;
-    margin-top: 10px;
+    background: url('img/me1.png')
 }
 
 .input {
@@ -199,7 +186,7 @@ a:visited {
 
 .error {
     margin:auto;
-    color: var(--brown);
+    color: var(--dark-blue);
 }
 
 .section {
@@ -208,7 +195,7 @@ a:visited {
 }
 
 .section:nth-child(even) {
-    background-color: var(--brown);
+    background-color: var(--light-blue);
     color: var(--black);
 }
 
